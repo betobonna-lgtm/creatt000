@@ -1,0 +1,1428 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Brotherlink Internet | Provedor de Internet em Mogi Mirim - SP</title>
+
+<meta name="description" content="Brotherlink Internet: provedor de internet fibra em Mogi Mirim/SP. Planos residenciais e empresariais, suporte local e conexão estável. Fale com a gente pelo WhatsApp (19) 99881-2323.">
+<meta name="keywords" content="provedor de internet Mogi Mirim, internet fibra Mogi Mirim, Brotherlink Internet, internet residencial, internet empresarial, SCM">
+<meta name="author" content="Brotherlink Internet - L. R. da S. B. de J. Telecomunicações">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#03102b">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Brotherlink Internet | Provedor de Internet em Mogi Mirim - SP">
+<meta property="og:description" content="Internet fibra estável, suporte local e atendimento humano. Conheça os planos da Brotherlink Internet em Mogi Mirim/SP.">
+<meta property="og:image" content="https://www.net.com.br/files/104379/1920x600/850bf18a93/banner-custom-pagina-teste-velocidade-net-desk.jpg">
+<meta property="og:locale" content="pt_BR">
+
+<!-- Bootstrap 5 -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Bootstrap Icons -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --azul-900:#03102b;
+    --azul-800:#061c46;
+    --azul-700:#0b2c66;
+    --azul-500:#1c5bd8;
+    --ciano:#00d1ff;
+    --ciano-esc:#0098c9;
+    --laranja:#ff7a18;
+    --verde:#25d366;
+    --cinza-100:#f3f7ff;
+    --cinza-200:#e3ebfa;
+    --cinza-600:#5b6b86;
+    --texto:#22314d;
+  }
+
+  *{scroll-behavior:smooth;}
+  body{
+    font-family:'Inter',system-ui,-apple-system,Segoe UI,sans-serif;
+    color:var(--texto);
+    background:#fff;
+    overflow-x:hidden;
+  }
+  h1,h2,h3,h4,h5{font-weight:800;letter-spacing:-.02em;color:var(--azul-900);}
+  p{line-height:1.75;}
+  a{text-decoration:none;}
+
+  /* ---------- Utilidades ---------- */
+  .text-ciano{color:var(--ciano)!important;}
+  .text-laranja{color:var(--laranja)!important;}
+  .bg-azul-900{background:var(--azul-900)!important;}
+  .bg-cinza{background:var(--cinza-100)!important;}
+  .section{padding:90px 0;}
+  .section-sm{padding:60px 0;}
+  .kicker{
+    display:inline-flex;align-items:center;gap:.5rem;
+    font-size:.78rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;
+    color:var(--azul-500);background:rgba(28,91,216,.09);
+    padding:.5rem 1rem;border-radius:100px;margin-bottom:1rem;
+  }
+  .section-title{font-size:clamp(1.8rem,3.4vw,2.7rem);line-height:1.15;margin-bottom:1rem;}
+  .section-sub{color:var(--cinza-600);font-size:1.06rem;max-width:720px;margin:0 auto;}
+
+  /* ---------- Botões ---------- */
+  .btn{border-radius:100px;font-weight:700;padding:.85rem 1.7rem;transition:.25s;border:none;}
+  .btn-brand{
+    background:linear-gradient(135deg,var(--ciano) 0%,var(--azul-500) 100%);
+    color:#fff;box-shadow:0 10px 26px -10px rgba(0,152,201,.85);
+  }
+  .btn-brand:hover{color:#fff;transform:translateY(-3px);box-shadow:0 16px 34px -12px rgba(0,152,201,.95);}
+  .btn-outline-light-2{
+    background:transparent;color:#fff;border:2px solid rgba(255,255,255,.55);
+  }
+  .btn-outline-light-2:hover{background:#fff;color:var(--azul-900);border-color:#fff;transform:translateY(-3px);}
+  .btn-whats{background:var(--verde);color:#fff;box-shadow:0 10px 26px -10px rgba(37,211,102,.9);}
+  .btn-whats:hover{background:#1eb958;color:#fff;transform:translateY(-3px);}
+  .btn-ghost{
+    background:#fff;color:var(--azul-800);border:2px solid var(--cinza-200);
+  }
+  .btn-ghost:hover{border-color:var(--azul-500);color:var(--azul-500);transform:translateY(-3px);}
+
+  /* ---------- Navbar ---------- */
+  .navbar{
+    background:rgba(3,16,43,.86);
+    backdrop-filter:blur(14px);
+    -webkit-backdrop-filter:blur(14px);
+    border-bottom:1px solid rgba(255,255,255,.08);
+    padding:.85rem 0;
+    transition:.3s;
+  }
+  .navbar-brand{display:flex;align-items:center;gap:.65rem;font-weight:900;color:#fff!important;font-size:1.2rem;letter-spacing:-.02em;}
+  .brand-mark{
+    width:42px;height:42px;border-radius:13px;display:grid;place-items:center;
+    background:linear-gradient(135deg,var(--ciano),var(--azul-500));
+    color:#fff;font-size:1.25rem;box-shadow:0 8px 20px -8px rgba(0,209,255,.9);
+  }
+  .navbar .nav-link{color:rgba(255,255,255,.82)!important;font-weight:600;font-size:.94rem;padding:.5rem 1rem!important;border-radius:8px;transition:.2s;}
+  .navbar .nav-link:hover{color:var(--ciano)!important;}
+  .navbar-toggler{border:1px solid rgba(255,255,255,.3);padding:.4rem .6rem;}
+  .navbar-toggler:focus{box-shadow:none;}
+  .navbar-toggler-icon{filter:invert(1);}
+
+  /* ---------- Hero ---------- */
+  .hero{
+    position:relative;
+    min-height:100vh;
+    display:flex;align-items:center;
+    padding:150px 0 110px;
+    background:
+      linear-gradient(115deg,rgba(3,16,43,.96) 8%,rgba(6,28,70,.86) 46%,rgba(6,28,70,.55) 100%),
+      url('https://www.net.com.br/files/104379/1920x600/850bf18a93/banner-custom-pagina-teste-velocidade-net-desk.jpg') center/cover no-repeat;
+    color:#fff;
+  }
+  .hero::after{
+    content:"";position:absolute;left:0;right:0;bottom:0;height:140px;
+    background:linear-gradient(to top,#fff,transparent);pointer-events:none;
+  }
+  .hero h1{color:#fff;font-size:clamp(2.1rem,5vw,3.9rem);line-height:1.07;font-weight:900;}
+  .hero h1 .grifado{
+    background:linear-gradient(120deg,var(--ciano),#7ce8ff 60%);
+    -webkit-background-clip:text;background-clip:text;color:transparent;
+  }
+  .hero p.lead{color:rgba(255,255,255,.85);font-size:1.1rem;max-width:560px;font-weight:400;}
+  .hero-badge{
+    display:inline-flex;align-items:center;gap:.55rem;
+    background:rgba(0,209,255,.14);border:1px solid rgba(0,209,255,.4);
+    color:#9be9ff;font-weight:700;font-size:.8rem;letter-spacing:.06em;text-transform:uppercase;
+    padding:.5rem 1.1rem;border-radius:100px;margin-bottom:1.4rem;
+  }
+  .hero-card{
+    background:rgba(255,255,255,.07);
+    border:1px solid rgba(255,255,255,.16);
+    border-radius:22px;
+    padding:1.6rem;
+    backdrop-filter:blur(12px);
+    -webkit-backdrop-filter:blur(12px);
+  }
+  .hero-card .item{display:flex;gap:.9rem;align-items:flex-start;margin-bottom:1.1rem;}
+  .hero-card .item:last-child{margin-bottom:0;}
+  .hero-card i{color:var(--ciano);font-size:1.35rem;line-height:1;}
+  .hero-card strong{display:block;color:#fff;font-size:.98rem;}
+  .hero-card span{color:rgba(255,255,255,.7);font-size:.85rem;}
+
+  /* ---------- Stats ---------- */
+  .stats-strip{
+    margin-top:-70px;position:relative;z-index:5;
+    background:#fff;border-radius:22px;
+    box-shadow:0 30px 70px -35px rgba(6,28,70,.55);
+    border:1px solid var(--cinza-200);
+    padding:2rem 1rem;
+  }
+  .stat{text-align:center;padding:.6rem .4rem;}
+  .stat .num{
+    font-size:clamp(1.6rem,3vw,2.2rem);font-weight:900;
+    background:linear-gradient(120deg,var(--azul-500),var(--ciano-esc));
+    -webkit-background-clip:text;background-clip:text;color:transparent;
+    line-height:1;
+  }
+  .stat .lbl{font-size:.83rem;color:var(--cinza-600);font-weight:600;margin-top:.45rem;}
+
+  /* ---------- Cards planos ---------- */
+  .plan-card{
+    background:#fff;border:1px solid var(--cinza-200);border-radius:22px;
+    overflow:hidden;height:100%;transition:.3s;display:flex;flex-direction:column;
+  }
+  .plan-card:hover{transform:translateY(-8px);box-shadow:0 30px 60px -30px rgba(6,28,70,.42);border-color:rgba(0,152,201,.45);}
+  .plan-card .thumb{height:190px;overflow:hidden;position:relative;}
+  .plan-card .thumb img{width:100%;height:100%;object-fit:cover;transition:.5s;}
+  .plan-card:hover .thumb img{transform:scale(1.07);}
+  .plan-card .thumb::after{
+    content:"";position:absolute;inset:0;
+    background:linear-gradient(to top,rgba(3,16,43,.55),transparent 65%);
+  }
+  .plan-tag{
+    position:absolute;top:14px;right:14px;z-index:2;
+    background:var(--laranja);color:#fff;font-size:.7rem;font-weight:800;
+    letter-spacing:.08em;text-transform:uppercase;padding:.35rem .8rem;border-radius:100px;
+  }
+  .plan-tag.azul{background:var(--azul-500);}
+  .plan-card .body{padding:1.7rem;flex:1;display:flex;flex-direction:column;}
+  .plan-speed{font-size:2.1rem;font-weight:900;color:var(--azul-900);line-height:1;}
+  .plan-speed small{font-size:.95rem;font-weight:700;color:var(--cinza-600);}
+  .plan-list{list-style:none;padding:0;margin:1.2rem 0 1.5rem;}
+  .plan-list li{display:flex;gap:.6rem;align-items:flex-start;font-size:.92rem;margin-bottom:.7rem;color:#3d4d6b;}
+  .plan-list i{color:var(--verde);font-size:1.05rem;margin-top:.1rem;}
+
+  /* ---------- Vantagens ---------- */
+  .feat{
+    background:#fff;border:1px solid var(--cinza-200);border-radius:20px;
+    padding:2rem 1.6rem;height:100%;transition:.3s;
+  }
+  .feat:hover{transform:translateY(-6px);border-color:rgba(0,152,201,.45);box-shadow:0 24px 50px -32px rgba(6,28,70,.5);}
+  .feat .ico{
+    width:56px;height:56px;border-radius:16px;display:grid;place-items:center;
+    font-size:1.5rem;margin-bottom:1.1rem;
+    background:linear-gradient(135deg,rgba(0,209,255,.16),rgba(28,91,216,.16));
+    color:var(--azul-500);
+  }
+  .feat h5{font-size:1.08rem;margin-bottom:.5rem;}
+  .feat p{font-size:.92rem;color:var(--cinza-600);margin:0;}
+
+  /* ---------- Velocidade ---------- */
+  .speed-box{
+    background:linear-gradient(135deg,var(--azul-900) 0%,var(--azul-700) 100%);
+    border-radius:26px;color:#fff;padding:clamp(1.8rem,4vw,3.4rem);
+    position:relative;overflow:hidden;
+  }
+  .speed-box::before{
+    content:"";position:absolute;width:420px;height:420px;border-radius:50%;
+    background:radial-gradient(circle,rgba(0,209,255,.28),transparent 70%);
+    top:-160px;right:-120px;
+  }
+  .speed-box h2,.speed-box h3{color:#fff;position:relative;}
+  .speed-img{border-radius:18px;box-shadow:0 30px 60px -30px rgba(0,0,0,.7);}
+
+  /* ---------- Avaliações ---------- */
+  .review{
+    background:#fff;border:1px solid var(--cinza-200);border-radius:20px;
+    padding:1.8rem;height:100%;transition:.3s;display:flex;flex-direction:column;
+  }
+  .review:hover{transform:translateY(-6px);box-shadow:0 26px 55px -34px rgba(6,28,70,.5);border-color:rgba(0,152,201,.4);}
+  .stars{color:#ffb400;font-size:.95rem;letter-spacing:.12em;margin-bottom:.9rem;}
+  .review p{font-size:.94rem;color:#3d4d6b;font-style:italic;flex:1;}
+  .review .who{display:flex;align-items:center;gap:.8rem;margin-top:1.1rem;padding-top:1.1rem;border-top:1px dashed var(--cinza-200);}
+  .avatar{
+    width:44px;height:44px;border-radius:50%;display:grid;place-items:center;
+    font-weight:800;color:#fff;font-size:.95rem;flex-shrink:0;
+    background:linear-gradient(135deg,var(--azul-500),var(--ciano-esc));
+  }
+  .review .who strong{display:block;font-size:.92rem;color:var(--azul-900);}
+  .review .who span{font-size:.8rem;color:var(--cinza-600);}
+
+  /* ---------- Sobre ---------- */
+  .sobre-img{border-radius:22px;box-shadow:0 34px 70px -38px rgba(6,28,70,.7);}
+  .info-line{display:flex;gap:.8rem;align-items:flex-start;padding:.75rem 0;border-bottom:1px dashed var(--cinza-200);font-size:.93rem;}
+  .info-line:last-child{border-bottom:none;}
+  .info-line i{color:var(--azul-500);font-size:1.05rem;margin-top:.15rem;}
+  .info-line strong{color:var(--azul-900);}
+
+  /* ---------- Contato ---------- */
+  .contact-card{
+    background:#fff;border:1px solid var(--cinza-200);border-radius:20px;
+    padding:1.8rem;height:100%;transition:.3s;text-align:center;
+  }
+  .contact-card:hover{transform:translateY(-6px);border-color:rgba(0,152,201,.45);box-shadow:0 24px 50px -32px rgba(6,28,70,.45);}
+  .contact-card .ico{
+    width:60px;height:60px;border-radius:18px;display:grid;place-items:center;margin:0 auto 1rem;
+    font-size:1.5rem;background:linear-gradient(135deg,rgba(0,209,255,.16),rgba(28,91,216,.16));color:var(--azul-500);
+  }
+  .contact-card h5{font-size:1rem;margin-bottom:.45rem;}
+  .contact-card p{font-size:.9rem;color:var(--cinza-600);margin:0;word-break:break-word;}
+  .contact-card a{color:var(--azul-500);font-weight:700;}
+
+  /* ---------- FAQ ---------- */
+  .accordion-item{border:1px solid var(--cinza-200);border-radius:16px!important;margin-bottom:.9rem;overflow:hidden;}
+  .accordion-button{
+    font-weight:700;color:var(--azul-900);font-size:1rem;padding:1.15rem 1.4rem;background:#fff;
+  }
+  .accordion-button:not(.collapsed){background:rgba(0,209,255,.08);color:var(--azul-700);box-shadow:none;}
+  .accordion-button:focus{box-shadow:none;border-color:transparent;}
+  .accordion-body{font-size:.94rem;color:var(--cinza-600);padding:0 1.4rem 1.3rem;}
+
+  /* ---------- CTA final ---------- */
+  .cta-final{
+    background:linear-gradient(120deg,var(--azul-500) 0%,var(--azul-700) 55%,var(--azul-900) 100%);
+    border-radius:26px;color:#fff;padding:clamp(2rem,5vw,3.6rem);position:relative;overflow:hidden;
+  }
+  .cta-final::before{
+    content:"";position:absolute;width:520px;height:520px;border-radius:50%;
+    background:radial-gradient(circle,rgba(0,209,255,.35),transparent 70%);
+    bottom:-260px;left:-140px;
+  }
+  .cta-final h2{color:#fff;position:relative;}
+  .cta-final p{color:rgba(255,255,255,.85);position:relative;}
+
+  /* ---------- Footer ---------- */
+  footer{background:var(--azul-900);color:rgba(255,255,255,.72);padding-top:70px;}
+  footer h6{color:#fff;font-weight:800;font-size:.92rem;letter-spacing:.05em;text-transform:uppercase;margin-bottom:1.2rem;}
+  footer a{color:rgba(255,255,255,.72);font-size:.92rem;transition:.2s;}
+  footer a:hover{color:var(--ciano);}
+  footer ul{list-style:none;padding:0;margin:0;}
+  footer ul li{margin-bottom:.6rem;font-size:.92rem;}
+  .footer-bottom{border-top:1px solid rgba(255,255,255,.1);margin-top:50px;padding:1.6rem 0;font-size:.82rem;}
+  .footer-legal-btn{
+    background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.18);
+    color:#fff;font-size:.82rem;font-weight:700;border-radius:100px;padding:.55rem 1.2rem;transition:.25s;
+  }
+  .footer-legal-btn:hover{background:var(--ciano);border-color:var(--ciano);color:var(--azul-900);}
+  .social-btn{
+    width:40px;height:40px;border-radius:12px;display:grid;place-items:center;
+    background:rgba(255,255,255,.08);color:#fff;font-size:1rem;transition:.25s;
+  }
+  .social-btn:hover{background:var(--ciano);color:var(--azul-900);transform:translateY(-3px);}
+
+  /* ---------- WhatsApp flutuante ---------- */
+  .float-wa{
+    position:fixed;right:22px;bottom:22px;z-index:1050;
+    width:60px;height:60px;border-radius:50%;
+    background:var(--verde);color:#fff;display:grid;place-items:center;font-size:1.7rem;
+    box-shadow:0 14px 30px -10px rgba(37,211,102,.95);
+    animation:pulse 2.4s infinite;
+  }
+  .float-wa:hover{color:#fff;transform:scale(1.08);}
+  @keyframes pulse{
+    0%{box-shadow:0 0 0 0 rgba(37,211,102,.55),0 14px 30px -10px rgba(37,211,102,.95);}
+    70%{box-shadow:0 0 0 18px rgba(37,211,102,0),0 14px 30px -10px rgba(37,211,102,.95);}
+    100%{box-shadow:0 0 0 0 rgba(37,211,102,0),0 14px 30px -10px rgba(37,211,102,.95);}
+  }
+
+  /* ---------- Modais ---------- */
+  .modal-content{border:none;border-radius:20px;overflow:hidden;}
+  .modal-header{
+    background:linear-gradient(120deg,var(--azul-800),var(--azul-700));
+    color:#fff;border:none;padding:1.4rem 1.8rem;
+  }
+  .modal-header h5{color:#fff;font-size:1.15rem;margin:0;}
+  .modal-header .btn-close{filter:invert(1) grayscale(1);opacity:.85;}
+  .modal-body{padding:1.8rem;font-size:.93rem;color:#3d4d6b;}
+  .modal-body h6{
+    font-weight:800;color:var(--azul-900);font-size:.98rem;
+    margin-top:1.5rem;margin-bottom:.6rem;
+  }
+  .modal-body h6:first-child{margin-top:0;}
+  .modal-body ul{padding-left:1.2rem;}
+  .modal-body li{margin-bottom:.45rem;line-height:1.65;}
+  .modal-footer{border-top:1px solid var(--cinza-200);padding:1rem 1.8rem;}
+  .legal-note{font-size:.8rem;color:var(--cinza-600);background:var(--cinza-100);border-radius:12px;padding:.9rem 1.1rem;}
+
+  /* ---------- Animações de entrada ---------- */
+  .reveal{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s ease;}
+  .reveal.show{opacity:1;transform:none;}
+
+  @media (max-width:991px){
+    .hero{min-height:auto;padding:130px 0 90px;text-align:center;}
+    .hero p.lead{margin:0 auto;}
+    .hero-card{margin-top:2rem;text-align:left;}
+    .section{padding:64px 0;}
+    .stats-strip{margin-top:-40px;}
+  }
+  @media (max-width:575px){
+    .btn{padding:.8rem 1.4rem;font-size:.92rem;}
+    .float-wa{width:54px;height:54px;font-size:1.5rem;right:16px;bottom:16px;}
+  }
+</style>
+</head>
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand" href="#inicio">
+      <span class="brand-mark"><i class="bi bi-broadcast-pin"></i></span>
+      <span>Brotherlink<span class="text-ciano">.</span></span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Abrir menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto align-items-lg-center">
+        <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
+        <li class="nav-item"><a class="nav-link" href="#planos">Planos</a></li>
+        <li class="nav-item"><a class="nav-link" href="#vantagens">Vantagens</a></li>
+        <li class="nav-item"><a class="nav-link" href="#avaliacoes">Avaliações</a></li>
+        <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+        <li class="nav-item"><a class="nav-link" href="#faq">Dúvidas</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+        <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+          <a class="btn btn-brand w-100" href="https://wa.me/5519998812323?text=Ol%C3%A1!%20Gostaria%20de%20conhecer%20os%20planos%20da%20Brotherlink%20Internet." target="_blank" rel="noopener">
+            <i class="bi bi-whatsapp me-2"></i>Assinar agora
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- ================= HERO ================= -->
+<section class="hero" id="inicio">
+  <div class="container position-relative" style="z-index:2;">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-7">
+        <span class="hero-badge"><i class="bi bi-lightning-charge-fill"></i> Internet Fibra em Mogi Mirim/SP</span>
+        <h1>Conexão de verdade,<br><span class="grifado">com quem é daqui.</span></h1>
+        <p class="lead mt-4">
+          A Brotherlink Internet leva fibra óptica de alta velocidade para sua casa e para sua empresa,
+          com suporte local, atendimento humano e estabilidade para trabalhar, estudar e se divertir sem travar.
+        </p>
+        <div class="d-flex flex-wrap gap-3 mt-4 justify-content-center justify-content-lg-start">
+          <a href="#planos" class="btn btn-brand btn-lg"><i class="bi bi-wifi me-2"></i>Ver planos</a>
+          <a href="https://wa.me/5519998812323?text=Ol%C3%A1!%20Quero%20verificar%20a%20disponibilidade%20da%20Brotherlink%20no%20meu%20endere%C3%A7o." target="_blank" rel="noopener" class="btn btn-outline-light-2 btn-lg">
+            <i class="bi bi-geo-alt me-2"></i>Consultar cobertura
+          </a>
+        </div>
+        <div class="d-flex flex-wrap gap-4 mt-4 pt-2 justify-content-center justify-content-lg-start">
+          <div class="d-flex align-items-center gap-2">
+            <i class="bi bi-check-circle-fill text-ciano"></i>
+            <small style="color:rgba(255,255,255,.85);font-weight:600;">Sem fidelidade abusiva</small>
+          </div>
+          <div class="d-flex align-items-center gap-2">
+            <i class="bi bi-check-circle-fill text-ciano"></i>
+            <small style="color:rgba(255,255,255,.85);font-weight:600;">Suporte técnico local</small>
+          </div>
+          <div class="d-flex align-items-center gap-2">
+            <i class="bi bi-check-circle-fill text-ciano"></i>
+            <small style="color:rgba(255,255,255,.85);font-weight:600;">Wi-Fi de alta performance</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-5">
+        <div class="hero-card">
+          <div class="item">
+            <i class="bi bi-router"></i>
+            <div>
+              <strong>Fibra óptica até sua casa (FTTH)</strong>
+              <span>Tecnologia de ponta com baixa latência e alta estabilidade.</span>
+            </div>
+          </div>
+          <div class="item">
+            <i class="bi bi-headset"></i>
+            <div>
+              <strong>Atendimento humano e local</strong>
+              <span>Fale com gente de Mogi Mirim, de segunda a sábado.</span>
+            </div>
+          </div>
+          <div class="item">
+            <i class="bi bi-shield-check"></i>
+            <div>
+              <strong>Empresa registrada e ativa</strong>
+              <span>CNPJ 15.025.555/0001-65 — desde 2012 no mercado.</span>
+            </div>
+          </div>
+          <a href="tel:+551938625161" class="btn btn-ghost w-100 mt-3">
+            <i class="bi bi-telephone-fill me-2"></i>(19) 3862-5161
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= STATS ================= -->
+<div class="container">
+  <div class="stats-strip reveal">
+    <div class="row g-0">
+      <div class="col-6 col-md-3">
+        <div class="stat">
+          <div class="num">+12</div>
+          <div class="lbl">Anos de experiência</div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="stat">
+          <div class="num">100%</div>
+          <div class="lbl">Fibra óptica</div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="stat">
+          <div class="num">24/7</div>
+          <div class="lbl">Monitoramento da rede</div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="stat">
+          <div class="num">4,8★</div>
+          <div class="lbl">Satisfação dos clientes</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ================= PLANOS ================= -->
+<section class="section" id="planos">
+  <div class="container">
+    <div class="text-center mb-5 reveal">
+      <span class="kicker"><i class="bi bi-box-seam"></i> Nossos planos</span>
+      <h2 class="section-title">Escolha a velocidade ideal para você</h2>
+      <p class="section-sub">
+        Planos de internet fibra para residências, profissionais e empresas.
+        Todos com instalação técnica especializada, Wi-Fi de alta performance e suporte local.
+        Os valores e a disponibilidade variam conforme o endereço — consulte nossa equipe.
+      </p>
+    </div>
+
+    <div class="row g-4">
+      <!-- Plano 1 -->
+      <div class="col-md-6 col-lg-4 reveal">
+        <div class="plan-card">
+          <div class="thumb">
+            <span class="plan-tag azul">Residencial</span>
+            <img src="https://www.net.com.br/files/104379/570x380/4e813245a1/card-horizontal-g-tipos-internet.jpg" alt="Internet residencial fibra Brotherlink" loading="lazy">
+          </div>
+          <div class="body">
+            <div class="d-flex align-items-center gap-2 mb-2">
+              <i class="bi bi-house-door-fill text-ciano"></i>
+              <span class="fw-bold" style="color:var(--azul-700);font-size:.85rem;letter-spacing:.06em;text-transform:uppercase;">Para sua casa</span>
+            </div>
+            <div class="plan-speed">300 <small>Mega</small></div>
+            <ul class="plan-list">
+              <li><i class="bi bi-check-circle-fill"></i> Ideal para navegar, assistir e estudar</li>
+              <li><i class="bi bi-check-circle-fill"></i> Wi-Fi de alta performance incluso</li>
+              <li><i class="bi bi-check-circle-fill"></i> Instalação com técnico especializado</li>
+              <li><i class="bi bi-check-circle-fill"></i> Suporte local por telefone e WhatsApp</li>
+            </ul>
+            <a href="https://wa.me/5519998812323?text=Ol%C3%A1!%20Quero%20saber%20mais%20sobre%20o%20plano%20residencial%20de%20300%20Mega." target="_blank" rel="noopener" class="btn btn-brand w-100 mt-auto">
+              <i class="bi bi-whatsapp me-2"></i>Solicitar proposta
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Plano 2 -->
+      <div class="col-md-6 col-lg-4 reveal">
+        <div class="plan-card" style="border-color:rgba(0,152,201,.6);box-shadow:0 26px 60px -34px rgba(6,28,70,.4);">
+          <div class="thumb">
+            <span class="plan-tag">Mais vendido</span>
+            <img src="https://www.cobli.co/wp-content/uploads/2023/05/servicos-de-internet-residencial-scaled.jpg" alt="Plano de internet fibra residencial mais vendido" loading="lazy">
+          </div>
+          <div class="body">
+            <div class="d-flex align-items-center gap-2 mb-2">
+              <i class="bi bi-stars text-laranja"></i>
+              <span class="fw-bold" style="color:var(--azul-700);font-size:.85rem;letter-spacing:.06em;text-transform:uppercase;">Famílias conectadas</span>
+            </div>
+            <div class="plan-speed">500 <small>Mega</small></div>
+            <ul class="plan-list">
+              <li><i class="bi bi-check-circle-fill"></i> Vários dispositivos ao mesmo tempo</li>
+              <li><i class="bi bi-check-circle-fill"></i> Streaming em 4K sem travamentos</li>
+              <li><i class="bi bi-check-circle-fill"></i> Home office e games com baixa latência</li>
+              <li><i class="bi bi-check-circle-fill"></i> Suporte prioritário</li>
+            </ul>
+            <a href="https://wa.me/5519998812323?text=Ol%C3%A1!%20Quero%20saber%20mais%20sobre%20o%20plano%20de%20500%20Mega." target="_blank" rel="noopener" class="btn btn-brand w-100 mt-auto">
+              <i class="bi bi-whatsapp me-2"></i>Solicitar proposta
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Plano 3 -->
+      <div class="col-md-6 col-lg-4 reveal">
+        <div class="plan-card">
+          <div class="thumb">
+            <span class="plan-tag azul">Empresarial</span>
+            <img src="https://www.net.com.br/files/104379/277x344/376e11bfc0/img-doublecard-velocidade-1.jpg" alt="Internet empresarial fibra Brotherlink" loading="lazy">
+          </div>
+          <div class="body">
+            <div class="d-flex align-items-center gap-2 mb-2">
+              <i class="bi bi-buildings-fill text-ciano"></i>
+              <span class="fw-bold" style="color:var(--azul-700);font-size:.85rem;letter-spacing:.06em;text-transform:uppercase;">Para sua empresa</span>
+            </div>
+            <div class="plan-speed">600+ <small>Mega</small></div>
+            <ul class="plan-list">
+              <li><i class="bi bi-check-circle-fill"></i> Link dedicado e IP fixo (sob consulta)</li>
+              <li><i class="bi bi-check-circle-fill"></i> Prioridade técnica e SLA de atendimento</li>
+              <li><i class="bi bi-check-circle-fill"></i> Ideal para PDV, CFTV e nuvem</li>
+              <li><i class="bi bi-check-circle-fill"></i> Atendimento consultivo especializado</li>
+            </ul>
+            <a href="https://wa.me/5519998812323?text=Ol%C3%A1!%20Quero%20uma%20proposta%20de%20internet%20empresarial." target="_blank" rel="noopener" class="btn btn-brand w-100 mt-auto">
+              <i class="bi bi-whatsapp me-2"></i>Solicitar proposta
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <p class="text-center mt-4 mb-0" style="font-size:.85rem;color:var(--cinza-600);">
+      <i class="bi bi-info-circle me-1"></i>
+      Velocidades e condições sujeitas à análise de viabilidade técnica no endereço. Consulte nossa equipe para valores atualizados.
+    </p>
+  </div>
+</section>
+
+<!-- ================= VANTAGENS ================= -->
+<section class="section bg-cinza" id="vantagens">
+  <div class="container">
+    <div class="text-center mb-5 reveal">
+      <span class="kicker"><i class="bi bi-patch-check"></i> Por que a Brotherlink?</span>
+      <h2 class="section-title">Vantagens de ser nosso cliente</h2>
+      <p class="section-sub">Tecnologia de qualidade com o atendimento próximo de quem conhece a região.</p>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-3 reveal">
+        <div class="feat">
+          <div class="ico"><i class="bi bi-lightning-charge-fill"></i></div>
+          <h5>Alta velocidade</h5>
+          <p>Fibra óptica de ponta a ponta, com velocidade real para downloads, streaming e videoconferências.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 reveal">
+        <div class="feat">
+          <div class="ico"><i class="bi bi-headset"></i></div>
+          <h5>Suporte local</h5>
+          <p>Equipe de atendimento e técnicos na própria cidade. Menos espera, mais resolução.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 reveal">
+        <div class="feat">
+          <div class="ico"><i class="bi bi-graph-up-arrow"></i></div>
+          <h5>Estabilidade</h5>
+          <p>Rede monitorada 24 horas por dia para você não perder uma reunião ou um jogo importante.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 reveal">
+        <div class="feat">
+          <div class="ico"><i class="bi bi-cpu"></i></div>
+          <h5>Tecnologia IoT</h5>
+          <p>Estrutura preparada para casa conectada: câmeras, assistentes virtuais e dispositivos inteligentes.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 reveal">
+        <div class="feat">
+          <div class="ico"><i class="bi bi-wifi"></i></div>
+          <h5>Wi-Fi otimizado</h5>
+          <p>Equipamentos modernos e configuração feita por técnico para cobrir cada canto da casa.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 reveal">
+        <div class="feat">
+          <div class="ico"><i class="bi bi-shield-lock"></i></div>
+          <h5>Segurança</h5>
+          <p>Rede com proteção e orientação de boas práticas para navegar com tranquilidade.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 reveal">
+        <div class="feat">
+          <div class="ico"><i class="bi bi-people"></i></div>
+          <h5>Atendimento humano</h5>
+          <p>Sem robôs infinitos: você fala com pessoas de verdade, por telefone ou WhatsApp.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 reveal">
+        <div class="feat">
+          <div class="ico"><i class="bi bi-geo-alt-fill"></i></div>
+          <h5>Empresa da região</h5>
+          <p>Desde 2012 em Mogi Mirim, com CNPJ ativo e compromisso com a comunidade local.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= VELOCIDADE / TECNOLOGIA ================= -->
+<section class="section">
+  <div class="container">
+    <div class="speed-box reveal">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6 position-relative">
+          <span class="kicker" style="background:rgba(0,209,255,.16);color:#8ce8ff;"><i class="bi bi-speedometer2"></i> Velocidade real</span>
+          <h2 class="section-title" style="color:#fff;">Sua internet no ritmo certo</h2>
+          <p style="color:rgba(255,255,255,.82);">
+            A fibra óptica da Brotherlink entrega uma conexão estável e simétrica, ideal para quem
+            trabalha em home office, assiste a filmes em alta definição, joga online ou gerencia um negócio.
+          </p>
+          <ul class="plan-list mt-4" style="color:#fff;">
+            <li style="color:#fff;"><i class="bi bi-check-circle-fill text-ciano"></i> Baixa latência para jogos e chamadas de vídeo</li>
+            <li style="color:#fff;"><i class="bi bi-check-circle-fill text-ciano"></i> Upload rápido para enviar arquivos e fazer backup na nuvem</li>
+            <li style="color:#fff;"><i class="bi bi-check-circle-fill text-ciano"></i> Rede redundante e monitoramento constante</li>
+          </ul>
+          <a href="https://wa.me/5519998812323?text=Ol%C3%A1!%20Quero%20testar%20a%20velocidade%20da%20minha%20conex%C3%A3o%20Brotherlink." target="_blank" rel="noopener" class="btn btn-brand mt-3">
+            <i class="bi bi-speedometer me-2"></i>Testar minha conexão
+          </a>
+        </div>
+        <div class="col-lg-6">
+          <img src="https://www.net.com.br/files/104379/277x344/376e11bfc0/img-doublecard-velocidade-1.jpg"
+               alt="Teste de velocidade da internet Brotherlink" class="img-fluid speed-img w-100" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= AVALIAÇÕES ================= -->
+<section class="section bg-cinza" id="avaliacoes">
+  <div class="container">
+    <div class="text-center mb-5 reveal">
+      <span class="kicker"><i class="bi bi-star-fill"></i> Avaliações de clientes</span>
+      <h2 class="section-title">Quem usa, recomenda</h2>
+      <p class="section-sub">A satisfação de quem está conectado com a Brotherlink em Mogi Mirim e região.</p>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-4 reveal">
+        <div class="review">
+          <div class="stars">
+            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+          </div>
+          <p>“Troquei para a Brotherlink há mais de um ano e nunca fiquei sem conexão. Trabalho em home office e as reuniões rodam perfeitas. O atendimento é rápido e resolve de verdade.”</p>
+          <div class="who">
+            <div class="avatar">MR</div>
+            <div>
+              <strong>Marcos R.</strong>
+              <span>Mogi Mirim — SP</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4 reveal">
+        <div class="review">
+          <div class="stars">
+            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+          </div>
+          <p>“Instalação super organizada, o técnico explicou tudo e configurou o Wi-Fi direitinho. O sinal pega em todos os quartos, coisa que antes não acontecia.”</p>
+          <div class="who">
+            <div class="avatar">AL</div>
+            <div>
+              <strong>Ana Lúcia P.</strong>
+              <span>Loteamento Inocoop — Mogi Mirim</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4 reveal">
+        <div class="review">
+          <div class="stars">
+            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
+          </div>
+          <p>“Uso na minha loja há anos. O link é estável, o PDV nunca caiu por falta de internet e quando precisei de suporte fui atendido no mesmo dia.”</p>
+          <div class="who">
+            <div class="avatar">CS</div>
+            <div>
+              <strong>Carlos S.</strong>
+              <span>Comerciante — Mogi Mirim</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4 reveal">
+        <div class="review">
+          <div class="stars">
+            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+          </div>
+          <p>“Atendimento pelo WhatsApp é muito prático. Resolveram meu problema de configuração do roteador em minutos, sem enrolação.”</p>
+          <div class="who">
+            <div class="avatar">JF</div>
+            <div>
+              <strong>Juliana F.</strong>
+              <span>Mogi Mirim — SP</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4 reveal">
+        <div class="review">
+          <div class="stars">
+            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+          </div>
+          <p>“Meu filho joga online e eu assisto streaming ao mesmo tempo. Antes travava tudo, agora não trava nada. Valeu cada centavo.”</p>
+          <div class="who">
+            <div class="avatar">PA</div>
+            <div>
+              <strong>Paulo A.</strong>
+              <span>Jardim das Laranjeiras — Mogi Mirim</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4 reveal">
+        <div class="review">
+          <div class="stars">
+            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+          </div>
+          <p>“Empresa séria, com CNPJ ativo e atendimento de gente da cidade. É bom saber que existe um provedor que trata o cliente pelo nome.”</p>
+          <div class="who">
+            <div class="avatar">RB</div>
+            <div>
+              <strong>Renata B.</strong>
+              <span>Mogi Mirim — SP</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center mt-5 reveal">
+      <a href="https://wa.me/5519998812323?text=Ol%C3%A1!%20Quero%20falar%20com%20a%20Brotherlink." target="_blank" rel="noopener" class="btn btn-brand btn-lg">
+        <i class="bi bi-chat-heart me-2"></i>Quero ser cliente também
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SOBRE ================= -->
+<section class="section" id="sobre">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-6 reveal">
+        <img src="https://unale.org.br/wp-content/uploads/2022/02/zWKef3Rh0YMs5QlDnZrHtY2X7Ul5hmrn97x4C8Dv.jpg"
+             alt="Equipe e clientes conectados pela Brotherlink Internet" class="img-fluid sobre-img" loading="lazy">
+      </div>
+      <div class="col-lg-6 reveal">
+        <span class="kicker"><i class="bi bi-building"></i> Sobre a empresa</span>
+        <h2 class="section-title">Brotherlink Internet: conectando Mogi Mirim desde 2012</h2>
+        <p style="color:var(--cinza-600);">
+          A empresa <strong>Brotherlink Internet</strong>, de CNPJ <strong>15.025.555/0001-65</strong>, foi fundada em
+          <strong>09/02/2012</strong> e tem como razão social <strong>L. R. da S. B. de J. Telecomunicações</strong>.
+          Está localizada na cidade de <strong>Mogi Mirim</strong>, no estado de <strong>São Paulo</strong>.
+        </p>
+        <p style="color:var(--cinza-600);">
+          Sua atividade principal, conforme a Receita Federal, é
+          <strong>61.10-8-03 — Serviços de comunicação multimídia (SCM)</strong>, e sua situação cadastral
+          até o momento é <strong class="text-success">Ativa</strong>.
+        </p>
+
+        <div class="mt-4">
+          <div class="info-line">
+            <i class="bi bi-card-text"></i>
+            <div><strong>CNPJ:</strong> 15.025.555/0001-65</div>
+          </div>
+          <div class="info-line">
+            <i class="bi bi-file-earmark-text"></i>
+            <div><strong>Inscrição Estadual (SP):</strong> 456.079.228.117</div>
+          </div>
+          <div class="info-line">
+            <i class="bi bi-briefcase"></i>
+            <div><strong>Razão Social:</strong> L. R. da S. B. de J. Telecomunicações</div>
+          </div>
+          <div class="info-line">
+            <i class="bi bi-shop"></i>
+            <div><strong>Nome Fantasia:</strong> Brotherlink Internet</div>
+          </div>
+          <div class="info-line">
+            <i class="bi bi-calendar-check"></i>
+            <div><strong>Fundação:</strong> 09/02/2012</div>
+          </div>
+          <div class="info-line">
+            <i class="bi bi-diagram-3"></i>
+            <div><strong>Atividade principal:</strong> 61.10-8-03 — Serviços de comunicação multimídia (SCM)</div>
+          </div>
+        </div>
+
+        <a href="#contato" class="btn btn-brand mt-4">
+          <i class="bi bi-geo-alt me-2"></i>Falar com a Brotherlink
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CTA FINAL ================= -->
+<section class="section-sm">
+  <div class="container">
+    <div class="cta-final reveal">
+      <div class="row align-items-center g-4 position-relative">
+        <div class="col-lg-8">
+          <h2 class="section-title">Pronto para ter uma internet que não te deixa na mão?</h2>
+          <p class="mb-0">Fale agora com a nossa equipe e descubra a melhor opção para o seu endereço em Mogi Mirim e região.</p>
+        </div>
+        <div class="col-lg-4 text-lg-end">
+          <a href="https://wa.me/5519998812323?text=Ol%C3%A1!%20Quero%20contratar%20a%20Brotherlink%20Internet." target="_blank" rel="noopener" class="btn btn-whats btn-lg w-100 w-lg-auto">
+            <i class="bi bi-whatsapp me-2"></i>Falar no WhatsApp
+          </a>
+          <a href="tel:+551938625161" class="btn btn-outline-light-2 btn-lg w-100 w-lg-auto mt-3">
+            <i class="bi bi-telephone-fill me-2"></i>Ligar agora
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FAQ ================= -->
+<section class="section bg-cinza" id="faq">
+  <div class="container">
+    <div class="text-center mb-5 reveal">
+      <span class="kicker"><i class="bi bi-question-circle"></i> Dúvidas frequentes</span>
+      <h2 class="section-title">Perguntas que recebemos sempre</h2>
+      <p class="section-sub">Se a sua dúvida não estiver aqui, fale com a gente pelo WhatsApp.</p>
+    </div>
+
+    <div class="row justify-content-center">
+      <div class="col-lg-9">
+        <div class="accordion" id="faqAccordion">
+
+          <div class="accordion-item reveal">
+            <h2 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="true" aria-controls="faq1">
+                Quais regiões a Brotherlink Internet atende?
+              </button>
+            </h2>
+            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                Atendemos Mogi Mirim/SP e localidades com viabilidade técnica de rede. Como a cobertura é atualizada com frequência,
+                recomendamos consultar nosso time pelo WhatsApp <strong>(19) 99881-2323</strong> informando o seu endereço completo.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item reveal">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2">
+                Quanto tempo leva a instalação?
+              </button>
+            </h2>
+            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                Após a confirmação da viabilidade técnica, a instalação é agendada conforme a disponibilidade da nossa equipe.
+                O prazo médio costuma ser de poucos dias úteis, e o cliente é avisado previamente sobre o dia e o período da visita.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item reveal">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3">
+                O roteador Wi-Fi está incluso no plano?
+              </button>
+            </h2>
+            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                Os planos incluem equipamento para o funcionamento do serviço, conforme as condições comerciais vigentes.
+                Nossa equipe orienta a melhor configuração de Wi-Fi para o tamanho do seu imóvel e a quantidade de dispositivos conectados.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item reveal">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4" aria-expanded="false" aria-controls="faq4">
+                Como faço para solicitar suporte técnico?
+              </button>
+            </h2>
+            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                Você pode falar com a gente pelo telefone <strong>(19) 3862-5161</strong>, pelo WhatsApp
+                <strong>(19) 99881-2323</strong> ou pelo e-mail
+                <a href="mailto:contato@brotherlink.com.br">contato@brotherlink.com.br</a>.
+                Nosso atendimento é feito por pessoas reais, sempre que possível já na primeira conversa.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item reveal">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5" aria-expanded="false" aria-controls="faq5">
+                Os meus dados estão protegidos?
+              </button>
+            </h2>
+            <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                Sim. Tratamos os dados pessoais de acordo com a Lei Geral de Proteção de Dados (Lei nº 13.709/2018).
+                Para entender como coletamos, usamos e protegemos as informações, consulte a nossa
+                <a href="#" data-bs-toggle="modal" data-bs-target="#modalPrivacidade">Política de Privacidade</a>.
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTATO ================= -->
+<section class="section" id="contato">
+  <div class="container">
+    <div class="text-center mb-5 reveal">
+      <span class="kicker"><i class="bi bi-chat-dots"></i> Fale com a gente</span>
+      <h2 class="section-title">Estamos à disposição</h2>
+      <p class="section-sub">Atendimento humano, local e sem enrolação. Escolha o canal que preferir.</p>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-3 reveal">
+        <div class="contact-card">
+          <div class="ico"><i class="bi bi-telephone-fill"></i></div>
+          <h5>Telefone</h5>
+          <p><a href="tel:+551938625161">(19) 3862-5161</a></p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3 reveal">
+        <div class="contact-card">
+          <div class="ico" style="background:linear-gradient(135deg,rgba(37,211,102,.16),rgba(37,211,102,.28));color:#1eb958;">
+            <i class="bi bi-whatsapp"></i>
+          </div>
+          <h5>WhatsApp</h5>
+          <p><a href="https://wa.me/5519998812323" target="_blank" rel="noopener">(19) 99881-2323</a></p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3 reveal">
+        <div class="contact-card">
+          <div class="ico"><i class="bi bi-envelope-fill"></i></div>
+          <h5>E-mail</h5>
+          <p><a href="mailto:contato@brotherlink.com.br">contato@brotherlink.com.br</a></p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3 reveal">
+        <div class="contact-card">
+          <div class="ico"><i class="bi bi-geo-alt-fill"></i></div>
+          <h5>Endereço</h5>
+          <p>Av. Juscelino Kubitschek de Oliveira, 1259<br>Loteamento Inocoop<br>Mogi Mirim/SP — CEP 13806-520</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row g-4 mt-4 align-items-stretch">
+      <div class="col-lg-6 reveal">
+        <div class="h-100 p-4 p-lg-5" style="background:var(--cinza-100);border-radius:22px;border:1px solid var(--cinza-200);">
+          <h4 class="mb-3" style="font-size:1.2rem;"><i class="bi bi-send-check me-2 text-ciano"></i>Dados para correspondência</h4>
+          <p class="mb-1" style="font-size:.95rem;">
+            <strong>Brotherlink Internet</strong><br>
+            L. R. da S. B. de J. Telecomunicações<br>
+            Avenida Juscelino Kubitschek de Oliveira, 1259<br>
+            Loteamento Inocoop<br>
+            Mogi Mirim — SP<br>
+            CEP 13806-520
+          </p>
+          <hr>
+          <p class="mb-1" style="font-size:.9rem;"><strong>CNPJ:</strong> 15.025.555/0001-65</p>
+          <p class="mb-1" style="font-size:.9rem;"><strong>Inscrição Estadual (SP):</strong> 456.079.228.117</p>
+          <p class="mb-0" style="font-size:.9rem;"><strong>Situação cadastral:</strong> <span class="text-success fw-bold">Ativa</span></p>
+        </div>
+      </div>
+
+      <div class="col-lg-6 reveal">
+        <div class="h-100" style="border-radius:22px;overflow:hidden;border:1px solid var(--cinza-200);min-height:340px;">
+          <iframe
+            title="Localização da Brotherlink Internet em Mogi Mirim/SP"
+            src="https://www.google.com/maps?q=Avenida+Juscelino+Kubitschek+de+Oliveira,+1259,+Loteamento+Inocoop,+Mogi+Mirim,+SP,+13806-520&output=embed"
+            width="100%" height="100%" style="border:0;min-height:340px;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-4">
+        <div class="d-flex align-items-center gap-2 mb-3">
+          <span class="brand-mark"><i class="bi bi-broadcast-pin"></i></span>
+          <span class="fw-bold text-white" style="font-size:1.15rem;">Brotherlink<span class="text-ciano">.</span></span>
+        </div>
+        <p style="font-size:.92rem;max-width:340px;">
+          Provedor de internet fibra óptica em Mogi Mirim/SP. Conexão estável, tecnologia moderna
+          e atendimento local desde 2012.
+        </p>
+        <div class="d-flex gap-2 mt-3">
+          <a href="https://wa.me/5519998812323" target="_blank" rel="noopener" class="social-btn" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+          <a href="tel:+551938625161" class="social-btn" aria-label="Telefone"><i class="bi bi-telephone-fill"></i></a>
+          <a href="mailto:contato@brotherlink.com.br" class="social-btn" aria-label="E-mail"><i class="bi bi-envelope-fill"></i></a>
+        </div>
+      </div>
+
+      <div class="col-6 col-lg-2">
+        <h6>Navegação</h6>
+        <ul>
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#planos">Planos</a></li>
+          <li><a href="#vantagens">Vantagens</a></li>
+          <li><a href="#avaliacoes">Avaliações</a></li>
+          <li><a href="#faq">Dúvidas frequentes</a></li>
+        </ul>
+      </div>
+
+      <div class="col-6 col-lg-2">
+        <h6>Institucional</h6>
+        <ul>
+          <li><a href="#sobre">Sobre a empresa</a></li>
+          <li><a href="#contato">Contato</a></li>
+          <li><a href="#" data-bs-toggle="modal" data-bs-target="#modalPrivacidade">Política de Privacidade</a></li>
+          <li><a href="#" data-bs-toggle="modal" data-bs-target="#modalTermos">Termos de Uso</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-4">
+        <h6>Contato</h6>
+        <ul>
+          <li><i class="bi bi-geo-alt-fill me-2 text-ciano"></i>Av. Juscelino Kubitschek de Oliveira, 1259 — Loteamento Inocoop, Mogi Mirim/SP — 13806-520</li>
+          <li><i class="bi bi-telephone-fill me-2 text-ciano"></i><a href="tel:+551938625161">(19) 3862-5161</a></li>
+          <li><i class="bi bi-whatsapp me-2 text-ciano"></i><a href="https://wa.me/5519998812323" target="_blank" rel="noopener">(19) 99881-2323</a></li>
+          <li><i class="bi bi-envelope-fill me-2 text-ciano"></i><a href="mailto:contato@brotherlink.com.br">contato@brotherlink.com.br</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="d-flex flex-column flex-lg-row justify-content-between align-items-center gap-3">
+        <div class="text-center text-lg-start">
+          <div class="mb-1">
+            <strong class="text-white">Brotherlink Internet</strong> — L. R. da S. B. de J. Telecomunicações
+          </div>
+          <div>
+            CNPJ: 15.025.555/0001-65 &nbsp;|&nbsp; IE (SP): 456.079.228.117 &nbsp;|&nbsp; Mogi Mirim — SP
+          </div>
+          <div class="mt-1">© <span id="anoAtual"></span> Brotherlink Internet. Todos os direitos reservados.</div>
+        </div>
+        <div class="d-flex flex-wrap gap-2 justify-content-center">
+          <button type="button" class="footer-legal-btn" data-bs-toggle="modal" data-bs-target="#modalPrivacidade">
+            <i class="bi bi-shield-lock me-2"></i>Política de Privacidade
+          </button>
+          <button type="button" class="footer-legal-btn" data-bs-toggle="modal" data-bs-target="#modalTermos">
+            <i class="bi bi-file-earmark-text me-2"></i>Termos de Uso
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- WhatsApp flutuante -->
+<a href="https://wa.me/5519998812323?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Brotherlink%20e%20gostaria%20de%20atendimento." class="float-wa" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+  <i class="bi bi-whatsapp"></i>
+</a>
+
+<!-- ============================================================
+     MODAL — POLÍTICA DE PRIVACIDADE
+============================================================ -->
+<div class="modal fade" id="modalPrivacidade" tabindex="-1" aria-labelledby="tituloPrivacidade" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="tituloPrivacidade"><i class="bi bi-shield-lock me-2"></i>Política de Privacidade</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+      </div>
+      <div class="modal-body">
+
+        <p class="legal-note mb-3">
+          <strong>Última atualização:</strong> documento vigente. Esta Política de Privacidade descreve como a
+          <strong>Brotherlink Internet</strong> (L. R. da S. B. de J. Telecomunicações, CNPJ 15.025.555/0001-65)
+          coleta, utiliza, armazena e protege os dados pessoais dos usuários do site e dos clientes dos serviços de
+          comunicação multimídia (SCM), em conformidade com a Lei nº 13.709/2018 (LGPD) e o Marco Civil da Internet
+          (Lei nº 12.965/2014).
+        </p>
+
+        <h6>1. Quem é o controlador dos dados</h6>
+        <p>
+          O controlador dos dados pessoais tratados neste site é <strong>L. R. da S. B. de J. Telecomunicações</strong>,
+          nome fantasia <strong>Brotherlink Internet</strong>, CNPJ <strong>15.025.555/0001-65</strong>, Inscrição Estadual
+          (SP) <strong>456.079.228.117</strong>, com sede na Avenida Juscelino Kubitschek de Oliveira, 1259, Loteamento
+          Inocoop, Mogi Mirim/SP, CEP 13806-520.
+        </p>
+
+        <h6>2. Quais dados coletamos</h6>
+        <ul>
+          <li><strong>Dados de contato fornecidos por você:</strong> nome, telefone, WhatsApp, e-mail, endereço de instalação e mensagem enviada por formulários, e-mail ou aplicativos de mensagem.</li>
+          <li><strong>Dados de navegação:</strong> endereço IP, tipo de navegador, dispositivo, páginas acessadas, data e hora de acesso, tempo de permanência e site de origem.</li>
+          <li><strong>Cookies e tecnologias similares:</strong> identificadores armazenados no seu navegador para melhorar a experiência e medir o desempenho das campanhas.</li>
+          <li><strong>Dados contratuais (para clientes):</strong> informações necessárias à contratação, faturamento e prestação do serviço de telecomunicações.</li>
+        </ul>
+
+        <h6>3. Para que utilizamos os dados</h6>
+        <ul>
+          <li>Responder solicitações de contato, orçamentos e pedidos de suporte;</li>
+          <li>Verificar viabilidade técnica e realizar a instalação e manutenção do serviço;</li>
+          <li>Emitir documentos fiscais, realizar cobranças e cumprir obrigações legais e regulatórias (Anatel, Receita Federal, etc.);</li>
+          <li>Melhorar a experiência de navegação, a segurança do site e a qualidade dos serviços;</li>
+          <li>Realizar comunicações institucionais, informativas e de marketing, quando autorizado;</li>
+          <li>Mensurar resultados de campanhas publicitárias, inclusive campanhas veiculadas no Google Ads.</li>
+        </ul>
+
+        <h6>4. Bases legais do tratamento</h6>
+        <p>O tratamento dos dados pessoais é realizado com fundamento nas seguintes bases legais previstas na LGPD:</p>
+        <ul>
+          <li><strong>Consentimento</strong> do titular (art. 7º, I);</li>
+          <li><strong>Execução de contrato</strong> ou procedimentos preliminares (art. 7º, V);</li>
+          <li><strong>Cumprimento de obrigação legal ou regulatória</strong> (art. 7º, II);</li>
+          <li><strong>Legítimo interesse</strong> para segurança, prevenção a fraudes e melhoria dos serviços (art. 7º, IX);</li>
+          <li><strong>Exercício regular de direitos</strong> (art. 7º, VI).</li>
+        </ul>
+
+        <h6>5. Cookies e tecnologias de terceiros</h6>
+        <p>
+          Utilizamos cookies próprios e de terceiros para funcionamento do site, análise de tráfego e mensuração de
+          publicidade. Podemos utilizar ferramentas como <strong>Google Analytics</strong> e <strong>Google Ads</strong>,
+          que podem coletar dados de navegação conforme suas próprias políticas de privacidade.
+          Você pode gerenciar ou desativar cookies nas configurações do seu navegador e nas
+          <a href="https://myadcenter.google.com/" target="_blank" rel="noopener nofollow">preferências de anúncios do Google</a>.
+          A desativação de cookies essenciais pode impactar a navegação no site.
+        </p>
+
+        <h6>6. Compartilhamento de dados</h6>
+        <p>Não vendemos dados pessoais. O compartilhamento ocorre apenas quando necessário e com:</p>
+        <ul>
+          <li>Prestadores de serviços que apoiam a operação (hospedagem, sistemas de gestão, ferramentas de análise e comunicação), sempre com obrigações de confidencialidade;</li>
+          <li>Autoridades públicas, quando houver requisição legal ou regulatória;</li>
+          <li>Parceiros técnicos essenciais à prestação do serviço de telecomunicações.</li>
+        </ul>
+
+        <h6>7. Armazenamento e segurança</h6>
+        <p>
+          Adotamos medidas técnicas e administrativas razoáveis para proteger os dados pessoais contra acessos não
+          autorizados, perda, alteração ou destruição. Os dados são armazenados pelo tempo necessário ao cumprimento das
+          finalidades descritas e das obrigações legais aplicáveis, incluindo prazos fiscais, regulatórios e de
+          guarda de registros de acesso previstos no Marco Civil da Internet.
+        </p>
+
+        <h6>8. Direitos do titular</h6>
+        <p>Nos termos do art. 18 da LGPD, você pode solicitar, a qualquer momento:</p>
+        <ul>
+          <li>Confirmação da existência de tratamento e acesso aos seus dados;</li>
+          <li>Correção de dados incompletos, inexatos ou desatualizados;</li>
+          <li>Anonimização, bloqueio ou eliminação de dados desnecessários ou excessivos;</li>
+          <li>Portabilidade dos dados, observados os segredos comercial e industrial;</li>
+          <li>Eliminação dos dados tratados com base no consentimento;</li>
+          <li>Informação sobre compartilhamentos realizados;</li>
+          <li>Revogação do consentimento e oposição a tratamentos específicos.</li>
+        </ul>
+        <p>
+          Para exercer seus direitos, entre em contato pelo e-mail
+          <a href="mailto:contato@brotherlink.com.br">contato@brotherlink.com.br</a> ou pelo telefone
+          <a href="tel:+551938625161">(19) 3862-5161</a>. Responderemos no prazo legal.
+        </p>
+
+        <h6>9. Dados de crianças e adolescentes</h6>
+        <p>
+          O site não é destinado a menores de 18 anos e não coletamos intencionalmente dados de crianças ou
+          adolescentes sem o consentimento dos responsáveis legais.
+        </p>
+
+        <h6>10. Links para sites de terceiros</h6>
+        <p>
+          Nosso site pode conter links para páginas de terceiros. Não somos responsáveis pelas práticas de privacidade
+          ou pelo conteúdo desses sites, recomendando a leitura das respectivas políticas.
+        </p>
+
+        <h6>11. Alterações desta Política</h6>
+        <p>
+          Esta Política pode ser atualizada a qualquer momento para refletir mudanças legais, técnicas ou operacionais.
+          Recomendamos a consulta periódica desta página. A versão vigente é sempre a disponibilizada neste site.
+        </p>
+
+        <h6>12. Contato</h6>
+        <p class="mb-0">
+          <strong>Brotherlink Internet</strong> — L. R. da S. B. de J. Telecomunicações<br>
+          CNPJ 15.025.555/0001-65<br>
+          Av. Juscelino Kubitschek de Oliveira, 1259 — Loteamento Inocoop — Mogi Mirim/SP — CEP 13806-520<br>
+          E-mail: <a href="mailto:contato@brotherlink.com.br">contato@brotherlink.com.br</a> |
+          Telefone: <a href="tel:+551938625161">(19) 3862-5161</a> |
+          WhatsApp: <a href="https://wa.me/5519998812323" target="_blank" rel="noopener">(19) 99881-2323</a>
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-brand" data-bs-dismiss="modal">Entendi</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================
+     MODAL — TERMOS DE USO
+============================================================ -->
+<div class="modal fade" id="modalTermos" tabindex="-1" aria-labelledby="tituloTermos" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="tituloTermos"><i class="bi bi-file-earmark-text me-2"></i>Termos de Uso</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+      </div>
+      <div class="modal-body">
+
+        <p class="legal-note mb-3">
+          <strong>Última atualização:</strong> documento vigente. Ao acessar e utilizar este site, você declara ter lido,
+          compreendido e concordado com os presentes Termos de Uso. Caso não concorde, recomendamos que não utilize o site.
+        </p>
+
+        <h6>1. Identificação da empresa</h6>
+        <p>
+          Este site é de propriedade e operação de <strong>L. R. da S. B. de J. Telecomunicações</strong>, nome fantasia
+          <strong>Brotherlink Internet</strong>, CNPJ <strong>15.025.555/0001-65</strong>, Inscrição Estadual (SP)
+          <strong>456.079.228.117</strong>, com sede na Avenida Juscelino Kubitschek de Oliveira, 1259, Loteamento Inocoop,
+          Mogi Mirim/SP, CEP 13806-520, prestadora de Serviços de Comunicação Multimídia (SCM).
+        </p>
+
+        <h6>2. Aceitação dos termos</h6>
+        <p>
+          O acesso ao site implica aceitação integral destes Termos de Uso e da
+          <a href="#" data-bs-toggle="modal" data-bs-target="#modalPrivacidade">Política de Privacidade</a>.
+          A empresa poderá atualizar este documento a qualquer momento, sendo responsabilidade do usuário consultar a
+          versão vigente.
+        </p>
+
+        <h6>3. Finalidade do site</h6>
+        <p>
+          Este site tem caráter informativo e comercial, destinado à divulgação dos serviços de internet prestados pela
+          Brotherlink Internet, apresentação de planos, canais de contato e informações institucionais. As informações
+          sobre planos, velocidades e condições comerciais são ilustrativas e podem sofrer alterações sem aviso prévio,
+          estando sujeitas à análise de viabilidade técnica e à confirmação junto à equipe de atendimento.
+        </p>
+
+        <h6>4. Uso adequado do site</h6>
+        <p>O usuário se compromete a utilizar o site de forma lícita, sendo expressamente vedado:</p>
+        <ul>
+          <li>Utilizar o site para fins ilegais, fraudulentos ou que violem direitos de terceiros;</li>
+          <li>Tentar obter acesso não autorizado a áreas restritas, servidores ou sistemas da empresa;</li>
+          <li>Introduzir vírus, códigos maliciosos ou qualquer elemento capaz de danificar o funcionamento do site;</li>
+          <li>Copiar, reproduzir ou distribuir conteúdo do site sem autorização prévia e expressa;</li>
+          <li>Utilizar mecanismos automatizados de coleta de dados (scraping) sem autorização.</li>
+        </ul>
+
+        <h6>5. Contratação dos serviços</h6>
+        <p>
+          A contratação dos serviços de internet ocorre por meio dos canais oficiais de atendimento e está sujeita à
+          análise de viabilidade técnica, à disponibilidade de rede no endereço informado e à assinatura do contrato
+          específico de prestação de serviço, que prevalecerá sobre as informações genéricas divulgadas neste site.
+          A prestação do serviço é regulada pela legislação brasileira de telecomunicações e pelas normas da Anatel.
+        </p>
+
+        <h6>6. Propriedade intelectual</h6>
+        <p>
+          Todos os elementos do site — marca, logotipo, textos, layout, imagens, ícones e código-fonte — são de
+          propriedade da empresa ou licenciados a ela, sendo protegidos pela Lei nº 9.279/1996 (Propriedade Industrial)
+          e pela Lei nº 9.610/1998 (Direitos Autorais). É proibida a reprodução total ou parcial sem autorização escrita.
+          Imagens de terceiros eventualmente utilizadas pertencem aos seus respectivos titulares.
+        </p>
+
+        <h6>7. Limitação de responsabilidade</h6>
+        <p>
+          A empresa emprega esforços para manter as informações do site corretas e atualizadas, mas não garante que o
+          conteúdo esteja livre de erros ou interrupções. A empresa não se responsabiliza por:
+        </p>
+        <ul>
+          <li>Danos decorrentes de falhas de conexão, indisponibilidade temporária do site ou de serviços de terceiros;</li>
+          <li>Prejuízos causados por ações de terceiros, casos fortuitos ou força maior;</li>
+          <li>Conteúdos de sites externos acessados por meio de links disponibilizados no site.</li>
+        </ul>
+
+        <h6>8. Links de terceiros</h6>
+        <p>
+          O site pode conter links para páginas externas, incluindo redes sociais e serviços de mensagens. A empresa não
+          controla nem se responsabiliza pelo conteúdo, políticas ou práticas desses terceiros.
+        </p>
+
+        <h6>9. Privacidade e proteção de dados</h6>
+        <p>
+          O tratamento de dados pessoais realizado pela empresa observa a Lei nº 13.709/2018 (LGPD). As informações
+          detalhadas estão descritas na
+          <a href="#" data-bs-toggle="modal" data-bs-target="#modalPrivacidade">Política de Privacidade</a>,
+          parte integrante destes Termos.
+        </p>
+
+        <h6>10. Atendimento e suporte</h6>
+        <p>
+          Os canais oficiais de atendimento são: telefone <a href="tel:+551938625161">(19) 3862-5161</a>,
+          WhatsApp <a href="https://wa.me/5519998812323" target="_blank" rel="noopener">(19) 99881-2323</a> e
+          e-mail <a href="mailto:contato@brotherlink.com.br">contato@brotherlink.com.br</a>.
+          A empresa não se responsabiliza por solicitações realizadas em canais não oficiais.
+        </p>
+
+        <h6>11. Vigência e disposições gerais</h6>
+        <p>
+          Estes Termos vigoram por prazo indeterminado, a partir do acesso ao site. A eventual tolerância quanto ao
+          descumprimento de qualquer cláusula não constitui renúncia de direitos. Caso alguma disposição seja considerada
+          inválida, as demais permanecerão em pleno vigor.
+        </p>
+
+        <h6>12. Legislação aplicável e foro</h6>
+        <p class="mb-0">
+          Estes Termos são regidos pelas leis brasileiras. Fica eleito o foro da Comarca de <strong>Mogi Mirim — SP</strong>
+          para dirimir eventuais controvérsias, com renúncia a qualquer outro, por mais privilegiado que seja, ressalvadas
+          as hipóteses legais de competência do consumidor.
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-brand" data-bs-dismiss="modal">Entendi</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+  /* Ano automático no rodapé */
+  document.getElementById('anoAtual').textContent = new Date().getFullYear();
+
+  /* Animação de entrada dos elementos */
+  const reveals = document.querySelectorAll('.reveal');
+  if ('IntersectionObserver' in window) {
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((entry, i) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => entry.target.classList.add('show'), i * 70);
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    reveals.forEach(el => io.observe(el));
+  } else {
+    reveals.forEach(el => el.classList.add('show'));
+  }
+
+  /* Navbar com fundo sólido ao rolar */
+  const nav = document.getElementById('mainNav');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 60) {
+      nav.style.background = 'rgba(3,16,43,.98)';
+      nav.style.padding = '.55rem 0';
+    } else {
+      nav.style.background = 'rgba(3,16,43,.86)';
+      nav.style.padding = '.85rem 0';
+    }
+  });
+
+  /* Fecha o menu mobile ao clicar em um link */
+  document.querySelectorAll('#navMenu .nav-link').forEach(link => {
+    link.addEventListener('click', () => {
+      const menu = document.getElementById('navMenu');
+      if (menu.classList.contains('show')) {
+        new bootstrap.Collapse(menu).hide();
+      }
+    });
+  });
+</script>
+</body>
+</html>
